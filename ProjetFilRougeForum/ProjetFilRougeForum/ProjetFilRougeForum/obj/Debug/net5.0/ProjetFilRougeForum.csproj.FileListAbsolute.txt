@@ -1,0 +1,16 @@
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\bin\Debug\net5.0\ProjetFilRougeForum.exe
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\bin\Debug\net5.0\ProjetFilRougeForum.deps.json
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\bin\Debug\net5.0\ProjetFilRougeForum.runtimeconfig.json
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\bin\Debug\net5.0\ProjetFilRougeForum.runtimeconfig.dev.json
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\bin\Debug\net5.0\ProjetFilRougeForum.dll
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\bin\Debug\net5.0\ref\ProjetFilRougeForum.dll
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\bin\Debug\net5.0\ProjetFilRougeForum.pdb
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\obj\Debug\net5.0\ProjetFilRougeForum.csproj.AssemblyReference.cache
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\obj\Debug\net5.0\ProjetFilRougeForum.GeneratedMSBuildEditorConfig.editorconfig
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\obj\Debug\net5.0\ProjetFilRougeForum.AssemblyInfoInputs.cache
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\obj\Debug\net5.0\ProjetFilRougeForum.AssemblyInfo.cs
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\obj\Debug\net5.0\ProjetFilRougeForum.csproj.CoreCompileInputs.cache
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\obj\Debug\net5.0\ProjetFilRougeForum.dll
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\obj\Debug\net5.0\ref\ProjetFilRougeForum.dll
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\obj\Debug\net5.0\ProjetFilRougeForum.pdb
+F:\Formation C#\ProjetFilRougeForum\ProjetFilRougeForum\obj\Debug\net5.0\ProjetFilRougeForum.genruntimeconfig.cache
