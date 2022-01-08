@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using ProjetFilRougeForum.Classes;
 
 namespace ProjetFilRougeForum
 {
@@ -6,7 +8,8 @@ namespace ProjetFilRougeForum
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Wooooorld!");
+            IHM ihm = new IHM();
+            ihm.Start();
         }
     }
 }
