@@ -10,8 +10,10 @@ namespace ProjetFilRougeForum.Classes
     {
         string usernameTmp;
         string mdpTmp;
+        string emailTmp;
         bool accessUser;
         bool accessAdmin;
+        Users user = new Users();
 
         public void Start()
         {
@@ -40,12 +42,12 @@ namespace ProjetFilRougeForum.Classes
             if (choix == 1)
             {
                 LogIn();
-                if (Test.TestUser(usernameTmp, mdpTmp) == 1)
+                if (user.TestUsers(usernameTmp, mdpTmp) == 1)
                 {
                     Console.WriteLine("Connexion en cours...");
                     accessAdmin = true;
                 }
-                else if (Test.TestUser(usernameTmp, mdpTmp) == 2)
+                else if (user.TestUsers(usernameTmp, mdpTmp) == 2)
                 {
                     Console.WriteLine("Connexion en cours...");
                     accessUser = true;
@@ -57,7 +59,17 @@ namespace ProjetFilRougeForum.Classes
             }
             else if (choix == 2)
             {
-                Signup();
+                Inscription();
+                if (user.SignUp(emailTmp, usernameTmp, mdpTmp) == 1)
+                {
+                    Console.WriteLine("Félicitations, votre compte est créé!");
+                }
+                else if (user.SignUp(emailTmp, usernameTmp, mdpTmp) == 2)
+                {
+                    Console.WriteLine("Nom d'utilisateur et/ou Email déjà existant!");
+                }
+
+
             }
 
         }
@@ -71,10 +83,12 @@ namespace ProjetFilRougeForum.Classes
             mdpTmp = Console.ReadLine();
         }
 
-        public void Signup()
+        public void Inscription()
         {
 
             Console.WriteLine("**** Création de votre compte ****");
+            Console.WriteLine("\tEmail: ");
+            emailTmp = Console.ReadLine();
             Console.Write("\tUsername: ");
             usernameTmp = Console.ReadLine();
             Console.Write("\tMot de passe: ");
