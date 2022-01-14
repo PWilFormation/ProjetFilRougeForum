@@ -11,69 +11,75 @@ namespace ProjetFilRougeForum.Classes
         private string userName;
         private string password;
         private string email;
-        private Dictionary<int, string> DicoUserMail = new Dictionary<int, string>();
-        private Dictionary<int, string> DicoUserName = new Dictionary<int, string>();
-        private Dictionary<int, string> DicoUserMDP = new Dictionary<int, string>();
+        private object[] utilisateurs = new object[] { };
+        private int compteur = 0;
 
         public Users()
         {
 
         }
 
-        public Users(string userName, string password, string email)
+        public Users(string userName, string password, string email, int compteur, object[] utilisateurs)
         {
             this.UserName = userName;
             this.Password = password;
             this.Email = email;
+            this.Compteur = compteur;
+            this.utilisateurs = utilisateurs;
         }
 
         public string UserName { get => userName; set => userName = value; }
         public string Password { get => password; set => password = value; }
         public string Email { get => email; set => email = value; }
+        public int Compteur { get => compteur; set => compteur = value; }
+        public object[] Utilisateurs { get => utilisateurs; set => utilisateurs = value; }
 
-        public int SignUp(string mail, string pseudo ,string mdp)
+        public int SignUp(string mail, string pseudo, string mdp)
         {
             Email = mail;
             UserName = pseudo;
             Password = mdp;
-            
-            if (CheckUsernameExist() == false && CheckEmailUserExist() == false)
-            {
-                DicoUserMail.Add(DicoUserMail.Count + 1, Email);
-                DicoUserName.Add(DicoUserName.Count + 1, UserName);
-                DicoUserMDP.Add(DicoUserMDP.Count + 1, Password);
-                return 1;
-            }
-            else
-            {
-                return 2;
-            }
+
+            //Compteur = 1;
+            //Utilisateurs[0] = new object[] { mail, pseudo, mdp };
+            return 1;
+
+            //if (CheckUsernameExist() == false && CheckEmailUserExist() == false)
+            //{
+
+            //    return 1;
+            //}
+            //else
+            //{
+            //    return 2;
+            //}
 
         }
 
-        public bool CheckUsernameExist()
-        {
-            foreach (var user in DicoUserMail)
-            {
-                if (user.Value == email)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
+        //public bool CheckUsernameExist()
+        //{
+        //    foreach (int i in Utilisateurs)
+        //    {
+        //        if (utilisateurs[i](1) == UserName)
+        //        {
 
-        public bool CheckEmailUserExist()
-        {
-            foreach (var item in DicoUserMail)
-            {
-                if (item.Value == email)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
+        //            return true;
+        //        }
+        //    }
+        //    return false;
+        //}
+
+        //public bool CheckEmailUserExist()
+        //{
+        //    foreach (var item in DicoUserMail)
+        //    {
+        //        if (item.Value == email)
+        //        {
+        //            return true;
+        //        }
+        //    }
+        //    return false;
+        //}
 
         public int TestUsers(string name, string password)
         {
@@ -85,19 +91,23 @@ namespace ProjetFilRougeForum.Classes
             //    }
             //}
 
-            foreach (KeyValuePair<int, string> item in DicoUserName)
+            if (UserName == name)
             {
-                if (item.Value == name)
+                if (Password == password)
                 {
-                    foreach (KeyValuePair<int, string> mddp in DicoUserMDP)
-                    {
-                        if (item.Value == password)
-                        {
-                            return 2;
-                        }
-                    }
+                    return 2;
                 }
+
+                //foreach (KeyValuePair<int, string> mddp in DicoUserMDP)
+                //{
+
+                //}
             }
+
+            //foreach ()
+            //{
+                
+            //}
             return 0;
         }
     }

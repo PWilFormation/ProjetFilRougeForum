@@ -64,10 +64,10 @@ namespace ProjetFilRougeForum.Classes
                 {
                     Console.WriteLine("Félicitations, votre compte est créé!");
                 }
-                else if (user.SignUp(emailTmp, usernameTmp, mdpTmp) == 2)
-                {
-                    Console.WriteLine("Nom d'utilisateur et/ou Email déjà existant!");
-                }
+                //else if (user.SignUp(emailTmp, usernameTmp, mdpTmp) == 2)
+                //{
+                //    Console.WriteLine("Nom d'utilisateur et/ou Email déjà existant!");
+                //}
 
 
             }
